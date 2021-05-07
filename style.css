@@ -8,7 +8,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 170px;
+    padding: 10px 12.5vw;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     font-family: 'Source Sans Pro';
 }
@@ -41,7 +41,7 @@ nav a {
 }
 
 #community-nav-link, #get-started-nav-link {
-    margin-left: 61px;
+    margin-left: 4.5vw;
 }
 
 #nav-right {
@@ -68,3 +68,8 @@ nav a {
     color: white;
 }
 
+@media (max-width: 800px) {
+    #nav-mid {
+        display: none;
+    }
+}
