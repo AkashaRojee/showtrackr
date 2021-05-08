@@ -186,12 +186,12 @@ nav #cta a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
   }
   #intro .flex-row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    text-align: center;
   }
   #intro #intro-left {
     margin-bottom: 30px;
@@ -204,9 +204,6 @@ nav #cta a {
   }
   #intro #intro-left #compatibility {
     margin-top: 30px;
-  }
-  #intro #intro-left #compatibility #icons {
-    text-align: center;
   }
   #intro #intro-right {
     margin-left: 0px;
