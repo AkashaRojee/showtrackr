@@ -75,7 +75,7 @@ nav {
         font-size: 70px;
         font-weight: 900;
         line-height: 1;
-        //margin-right: 8.5vw;
+        margin-right: 8.5vw;
     }
 
     #description {
@@ -83,7 +83,7 @@ nav {
         font-size: 21px;
         font-weight: 300;
         line-height: 1.5;
-        //margin-right: 18.5vw;
+        margin-right: 19vw;
         margin-top: 15px;
     }
 
@@ -146,10 +146,8 @@ nav {
     }
 
     #intro-right {
-        margin-left: 150px;
         img {
             width: 310px;
-            height: auto;
         }
     }
 }
@@ -176,6 +174,10 @@ nav {
 
         #intro-left {
             margin-bottom: 30px;
+
+            #title, #description {
+                margin-right: 0px;
+            }
 
             form {
                 text-align: start;

@@ -94,12 +94,14 @@ nav #cta a {
   font-size: 70px;
   font-weight: 900;
   line-height: 1;
+  margin-right: 8.5vw;
 }
 
 #intro #description {
   font-size: 21px;
   font-weight: 300;
   line-height: 1.5;
+  margin-right: 19vw;
   margin-top: 15px;
 }
 
@@ -163,13 +165,8 @@ nav #cta a {
   margin-right: 37.4px;
 }
 
-#intro #intro-right {
-  margin-left: 150px;
-}
-
 #intro #intro-right img {
   width: 310px;
-  height: auto;
 }
 
 #intro-form {
@@ -198,6 +195,9 @@ nav #cta a {
   }
   #intro #intro-left {
     margin-bottom: 30px;
+  }
+  #intro #intro-left #title, #intro #intro-left #description {
+    margin-right: 0px;
   }
   #intro #intro-left form {
     text-align: start;
