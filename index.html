@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>showtrackr</title>
 </head>
 <body>
 
     <header>
-        <nav>
-            <section id="nav-left">
+        <nav class="flex-row">
+            <section class="flex-row justify-center" id="nav-left">
                 <div>
                     <a href="#">
-                        <span>Show</span><span id="trackr-nav-link">Trackr</span>
+                        <span>Show</span><span>Trackr</span>
                     </a>
                 </div>
             </section>
 
-            <section id="nav-mid">
-                <div id="features-nav-link"><a href="#">Features</a></div>
-                <div id="community-nav-link"><a href="#">Community</a></div>
-                <div id="get-started-nav-link"><a href="#">Get Started</a></div>
+            <section class="flex-row justify-center" id="nav-mid">
+                <div id="features"><a href="#">Features</a></div>
+                <div id="community"><a href="#">Community</a></div>
+                <div id="get-started"><a href="#">Get Started</a></div>
             </section>
 
-            <section id="nav-right">
-                <div id="log-in-nav-link"><a href="#">Log in</a></div>
-                <div id="get-started-nav-button"><a href="#">Get started</a></div>
+            <section class="flex-row justify-center" id="nav-right">
+                <div id="log-in"><a href="#">Log in</a></div>
+                <div id="cta"><a href="#">Get started</a></div>
             </section>
         </nav>
 
         <main>
-            <section id="intro">
-                <div id="intro-left">
-                    <div id="intro-title">Track your shows<br>automatically</div>
-                    <div id="intro-description">With ShowTrackr you can track your favorite TV shows automatically, so you never lose track of your TV shows ever again. 🍿</div>
-                    <div id="intro-form">
-                        <form>
-                            <div id="email-container">
-                                <label for="email">Email</label>
-                                <input id="email" type="email" placeholder="your@email.com">
-                            </div>
-                            <button>Start tracking</button>
-                        </form>
-                    </div>
-                    <div id="intro-compatibility">
+            <section id="intro" class="flex-row">
+               
+                <div id="intro-left" class="flex-col justify-center">
+                    
+                    <p id="title">Track your shows<br>automatically</p>
+                    <p id="description">With ShowTrackr you can track your favorite TV shows automatically, so you never lose track of your TV shows ever again. 🍿</p>
+                    
+                    <form class="flex-row">
+                        <div id="email-container" class="flex-col">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="your@email.com">
+                        </div>
+                        <button>Start tracking</button>
+                    </form>
+
+                    <div id="compatibility">
                         <p>COMPATIBLE WITH</p>
-                        <div id="intro-compatibility-icons">
+                        <div id="icons">
                             <img src="images/netflix.png">
                             <img src="images/apple.png">
                             <img src="images/android.png">
@@ -52,10 +54,13 @@
                             <img src="images/synology.png">
                         </div>
                     </div>
-                    </div>
+
+                </div>
+
                 <div id="intro-right">
                     <img src="images/iphone-x-mockup.png">
                 </div>
+
             </section>
         </main>
 

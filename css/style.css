@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+body {
+  margin: 0px;
+}
+
+* {
+  font-family: 'Source Sans Pro';
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 12.5vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+nav #nav-left {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav #nav-left span:nth-child(2) {
+  color: #540cfa;
+}
+
+nav #community, nav #get-started {
+  margin-left: 4.5vw;
+}
+
+nav #log-in {
+  font-weight: bold;
+}
+
+nav #cta {
+  padding: 6px 17px 7px 17px;
+  margin-left: 30px;
+  background-color: #540cfa;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav #cta a {
+  color: white;
+}
+
+#intro {
+  margin: 85px 170px 0px 170px;
+}
+
+#intro p {
+  margin: 0px;
+}
+
+#intro #title {
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+#intro #description {
+  margin: 15px 240px 0px 0px;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+#intro form {
+  margin: 30px 0px 0px 0px;
+}
+
+#intro form #email-container {
+  padding: 8px 15px;
+  border: 0.5px solid rgba(0, 0, 0, 0.05);
+  border-right: none;
+  border-radius: 4px 0px 0px 4px;
+  width: 310px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#intro form #email-container label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #540cfa;
+}
+
+#intro form #email-container input {
+  opacity: 0.3;
+  font-size: 16px;
+  width: auto;
+}
+
+#intro form #email-container input:focus {
+  outline: none;
+}
+
+#intro form button {
+  padding: 16px 22px 15px 21px;
+  background-color: #540cfa;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0px 4px 4px 0px;
+  border: none;
+}
+
+#intro #compatibility {
+  margin-top: 130px;
+  opacity: 0.3;
+}
+
+#intro #compatibility p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+#intro #compatibility #icons {
+  margin-top: 15px;
+}
+
+#intro #compatibility #icons img {
+  margin-right: 37.4px;
+}
+
+#intro #intro-right img {
+  width: 310px;
+}
+
+#intro-form {
+  /* min-width: 100%; */
+}
+
+@media (max-width: 800px) {
+  #nav-mid {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
