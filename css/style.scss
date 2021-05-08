@@ -68,23 +68,23 @@ nav {
 }
 
 #intro {
-    margin: 85px 170px 0px 170px;
-
-    p {
-        margin: 0px;
-    }
+    margin: 85px 11.8vw 0px 11.8vw;
+    justify-content: space-between;
 
     #title {
         font-size: 70px;
         font-weight: 900;
         line-height: 1;
+        //margin-right: 8.5vw;
     }
 
     #description {
-        margin: 15px 240px 0px 0px;
+        //margin: 15px 240px 0px 0px;
         font-size: 21px;
         font-weight: 300;
         line-height: 1.5;
+        //margin-right: 18.5vw;
+        margin-top: 15px;
     }
 
     form {
@@ -122,6 +122,7 @@ nav {
             font-weight: bold;
             border-radius: 0px 4px 4px 0px;
             border: none;
+            white-space: nowrap;
         }
     }
 
@@ -129,7 +130,7 @@ nav {
         margin-top: 130px;
         opacity: 0.3;
     
-        p {
+        #text {
             font-size: 12px;
             letter-spacing: 2px;
             font-weight: 600;
@@ -137,14 +138,15 @@ nav {
     
         #icons {
             margin-top: 15px;
-        
-            img {
+            
+            img:nth-child(-n+4){
                 margin-right: 37.4px;
             }
         }
     }
 
     #intro-right {
+        margin-left: 150px;
         img {
             width: 310px;
         }
@@ -159,4 +161,37 @@ nav {
     #nav-mid {
         display: none;
     }
+}
+
+@media (max-width: 1130px) {
+    #intro {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .flex-row {
+            justify-content: center;
+            text-align: center;
+        }
+
+        #intro-left {
+            margin-bottom: 30px;
+
+            form {
+                text-align: start;
+            }
+
+            #compatibility {
+                margin-top: 30px;
+    
+                #icons {
+                    text-align: center;
+                }
+    
+            }
+        }
+
+        #intro-right {
+            margin-left: 0px;
+        }        
+    }  
 }

@@ -84,11 +84,10 @@ nav #cta a {
 }
 
 #intro {
-  margin: 85px 170px 0px 170px;
-}
-
-#intro p {
-  margin: 0px;
+  margin: 85px 11.8vw 0px 11.8vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #intro #title {
@@ -98,10 +97,10 @@ nav #cta a {
 }
 
 #intro #description {
-  margin: 15px 240px 0px 0px;
   font-size: 21px;
   font-weight: 300;
   line-height: 1.5;
+  margin-top: 15px;
 }
 
 #intro form {
@@ -142,6 +141,7 @@ nav #cta a {
   font-weight: bold;
   border-radius: 0px 4px 4px 0px;
   border: none;
+  white-space: nowrap;
 }
 
 #intro #compatibility {
@@ -149,7 +149,7 @@ nav #cta a {
   opacity: 0.3;
 }
 
-#intro #compatibility p {
+#intro #compatibility #text {
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: 600;
@@ -159,8 +159,12 @@ nav #cta a {
   margin-top: 15px;
 }
 
-#intro #compatibility #icons img {
+#intro #compatibility #icons img:nth-child(-n+4) {
   margin-right: 37.4px;
+}
+
+#intro #intro-right {
+  margin-left: 150px;
 }
 
 #intro #intro-right img {
@@ -174,6 +178,37 @@ nav #cta a {
 @media (max-width: 800px) {
   #nav-mid {
     display: none;
+  }
+}
+
+@media (max-width: 1130px) {
+  #intro {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #intro .flex-row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  #intro #intro-left {
+    margin-bottom: 30px;
+  }
+  #intro #intro-left form {
+    text-align: start;
+  }
+  #intro #intro-left #compatibility {
+    margin-top: 30px;
+  }
+  #intro #intro-left #compatibility #icons {
+    text-align: center;
+  }
+  #intro #intro-right {
+    margin-left: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
