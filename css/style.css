@@ -39,10 +39,6 @@ nav {
           justify-content: space-between;
   padding: 10px 12.5vw;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 100;
   background-color: white;
 }
 
@@ -110,37 +106,36 @@ nav #cta a {
   margin-top: 15px;
 }
 
-#intro form {
-  margin: 30px 0px 0px 0px;
+#intro #form {
+  margin: 30px 243px 0px 0px;
 }
 
-#intro form #email-container {
+#intro #form #email-container {
   padding: 8px 15px;
   border: 0.5px solid rgba(0, 0, 0, 0.05);
   border-right: none;
   border-radius: 4px 0px 0px 4px;
-  width: 310px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-#intro form #email-container label {
+#intro #form #email-container label {
   font-size: 12px;
   font-weight: bold;
   color: #540cfa;
 }
 
-#intro form #email-container input {
+#intro #form #email-container input {
   opacity: 0.3;
   font-size: 16px;
-  width: auto;
 }
 
-#intro form #email-container input:focus {
+#intro #form #email-container input:focus {
   outline: none;
 }
 
-#intro form button {
+#intro #form button {
   padding: 16px 22px 15px 21px;
   background-color: #540cfa;
   color: white;
@@ -151,22 +146,20 @@ nav #cta a {
   white-space: nowrap;
 }
 
-#intro #compatibility {
+#intro #compatibility-text {
   margin-top: 130px;
   opacity: 0.3;
-}
-
-#intro #compatibility #text {
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: 600;
 }
 
-#intro #compatibility #icons {
+#intro #icons {
+  opacity: 0.3;
   margin-top: 15px;
 }
 
-#intro #compatibility #icons img:nth-child(-n+4) {
+#intro #icons img:nth-child(-n+4) {
   margin-right: 37.4px;
 }
 
@@ -178,49 +171,74 @@ nav #cta a {
   /* min-width: 100%; */
 }
 
-@media (max-width: 740px) {
-  #title {
-    font-size: 8.1vw !important;
-  }
-  #description {
-    padding: 0px 30px;
-  }
-}
-
 @media (max-width: 800px) {
   #nav-mid {
     display: none;
   }
 }
 
-@media (max-width: 1130px) {
-  #intro {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
+@media (max-width: 375px) {
+  nav {
+    padding-left: 16px;
+    padding-right: 16px;
   }
-  #intro .flex-row {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  nav #log-in {
+    display: none;
+  }
+  #intro {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 45px;
   }
   #intro #intro-left {
-    margin-bottom: 30px;
+    margin-bottom: 0px !important;
   }
-  #intro #intro-left #title, #intro #intro-left #description {
+  #intro #intro-left #title {
+    font-size: 42px !important;
+  }
+  #intro #intro-left #description {
+    margin-top: 4px;
+    font-size: 18px !important;
+  }
+  #intro #intro-left #form {
     margin-right: 0px;
   }
-  #intro #intro-left form {
-    text-align: start;
+  #intro #intro-left #form #email {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
-  #intro #intro-left #compatibility {
-    margin-top: 30px;
+  #intro #intro-left #compatibility-text {
+    font-size: 10px;
+    margin-top: 40px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  #intro #intro-left #icons {
+    margin-top: 14.8px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #intro #intro-left #icons img {
+    height: 25px;
+    margin-right: 0px !important;
+  }
+  #intro #intro-left #icons img:nth-child(1) {
+    height: 20.8px;
+  }
+  #intro #intro-left #icons img:nth-child(5) {
+    height: 20.8px;
   }
   #intro #intro-right {
-    margin-left: 0px;
+    margin-top: 43px;
+  }
+  #intro #intro-right img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */
