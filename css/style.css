@@ -178,6 +178,15 @@ nav #cta a {
   /* min-width: 100%; */
 }
 
+@media (max-width: 740px) {
+  #title {
+    font-size: 8.1vw !important;
+  }
+  #description {
+    padding: 0px 30px;
+  }
+}
+
 @media (max-width: 800px) {
   #nav-mid {
     display: none;
