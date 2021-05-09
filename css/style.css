@@ -239,7 +239,7 @@ nav #cta a {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   nav {
     padding-left: 16px;
     padding-right: 16px;
