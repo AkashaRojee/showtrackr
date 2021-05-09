@@ -221,6 +221,9 @@ nav #cta a {
     padding: 0px 5vw;
     margin-bottom: 40px;
   }
+  #intro #intro-right img {
+    max-width: 310px;
+  }
 }
 
 @media (max-width: 875px) {
