@@ -173,7 +173,7 @@ nav #cta a {
 }
 
 #intro #intro-right img {
-  width: 310px;
+  max-width: 310px;
   height: auto;
 }
 
@@ -185,7 +185,7 @@ nav #cta a {
     margin-top: 5vw;
   }
   #intro #intro-right img {
-    width: 21.5vw;
+    max-width: 21.5vw;
   }
 }
 
@@ -217,9 +217,6 @@ nav #cta a {
   #intro #intro-left #icons {
     padding: 0px 5vw;
     margin-bottom: 40px;
-  }
-  #intro #intro-right img {
-    width: 310px;
   }
 }
 

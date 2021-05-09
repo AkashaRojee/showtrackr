@@ -147,7 +147,7 @@ nav {
 
     #intro-right {
         img {
-            width: 310px;
+            max-width: 310px;
             height: auto;
         }
     }
@@ -165,7 +165,7 @@ nav {
 
         #intro-right {
             img {
-               width: 21.5vw;
+               max-width: 21.5vw;
             }
         }
     }    
@@ -199,12 +199,6 @@ nav {
             #icons {
                 padding: 0px 5vw;
                 margin-bottom: 40px;
-            }
-        }
-
-        #intro-right {
-            img {
-               width: 310px;
             }
         }
     }    
