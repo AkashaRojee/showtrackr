@@ -72,14 +72,15 @@ nav {
 }
 
 #intro {
-    margin: 85px 11.8vw 0px 11.8vw;
+    margin: 85px 12.5vw 0px 12.5vw;
     justify-content: space-between;
 
     #title {
         font-size: 70px;
         font-weight: 900;
         line-height: 1;
-        margin-right: 8.5vw;
+        //padding-right: 11vw;
+        //margin-right: 8.5vw;
     }
 
     #description {
@@ -87,12 +88,15 @@ nav {
         font-size: 21px;
         font-weight: 300;
         line-height: 1.5;
-        margin-right: 19vw;
+       // margin-right: 19vw;
+        padding-right: 17.5vw;
         margin-top: 15px;
     }
 
     #form {
-        margin: 30px 243px 0px 0px;
+        margin: 30px 19vw 0px 0px;
+        margin-right: 0px;
+        padding-right: 17.5vw;
 
         #email-container {
             padding: 8px 15px;
@@ -130,27 +134,25 @@ nav {
             white-space: nowrap;
         }
     }
-
-    // #compatibility {
-        
     
-        #compatibility-text {
-            margin-top: 130px;
+    #compatibility-text {
+        margin-top: 130px;
         opacity: 0.3;
-            font-size: 12px;
-            letter-spacing: 2px;
-            font-weight: 600;
-        }
-    
-        #icons {
-            opacity: 0.3;
-            margin-top: 15px;
-            
-            img:nth-child(-n+4){
-                margin-right: 37.4px;
-            }
-        }
-    // }
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        // margin-right: 19vw;
+        padding-right: 17.5vw;
+    }
+
+    #icons {
+        opacity: 0.3;
+        margin-top: 15px;
+        //margin-right: 19vw;
+        justify-content: space-between;
+        padding-right: 17.5vw;
+        align-items: flex-end;
+    }
 
     #intro-right {
         img {
@@ -159,100 +161,169 @@ nav {
     }
 }
 
-#intro-form {
-    /* min-width: 100%; */
+@media (max-width: 1215px) {
+    #intro {
+        #title {
+            font-size: 5vw;
+        }
+
+        #compatibility-text {
+            margin-top: 5vw;
+        }
+
+        #intro-right {
+            img {
+               width: 21.5vw;
+            }
+        }
+    }    
 }
 
-// @media (max-width: 740px) {
-//     #title {
-//         font-size: 8.1vw !important;
-//     }
-//     #description {
-//         padding: 0px 30px;
-//     }
+@media (max-width: 1035px) {
+    #intro {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        
+        .flex-row {
+            justify-content: center;
+        }
+
+        #intro-left {
+            #description {
+                padding: 0px 5vw;
+            }
     
-// }
+            #form {
+                padding: 0px 17.5vw;
+                text-align: start;
+            }
+
+            #compatibility-text {
+                margin-top: 40px;
+                padding-right: 0px;
+            }
+
+            #icons {
+                padding: 0px 5vw;
+                margin-bottom: 40px;
+            }
+        }
+
+        #intro-right {
+            img {
+               width: 310px;
+            }
+        }
+    }    
+}
+
+@media (max-width: 875px) {
+    #intro {
+        #intro-left {
+            #form {
+                padding: 0px 10vw;
+            }
+        }
+    }
+}
 
 @media (max-width: 800px) {
     #nav-mid {
         display: none;
     }
-}
-
-@media (max-width: 375px) {
-
-    nav {
-        padding-left: 16px;
-        padding-right: 16px;
-
-        #log-in {
-            display: none;
-        }
-    }
 
     #intro {
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-top: 45px;
-        
-        #intro-left {
-            margin-bottom: 0px !important;
-
-            #title {
-                font-size: 42px !important;
-            }
-        
-            #description {
-                margin-top: 4px;
-                font-size: 18px !important;
-            }
-    
-            #form {
-                margin-right: 0px;
-    
-                #email {
-                    width: 100%;
-                    box-sizing: border-box;
-                }
-            }
-    
-            #compatibility-text {
-                font-size: 10px;
-                margin-top: 40px;
-                width: 100%;
-                box-sizing: border-box;
-            }
-    
-            #icons {
-                margin-top: 14.8px;
-                justify-content: space-between;
-    
-                img {
-                    height: 25px;
-                    margin-right: 0px !important;
-    
-                    &:nth-child(1) {
-                        height: 20.8px;
-                    }
-    
-                    &:nth-child(5) {
-                        height: 20.8px;
-                    }
-                }
-            }
+        margin: 85px 11.5vw 0px 11.5vw;
         }
-        
-        #intro-right {
-            margin-top: 43px;
-            img {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 80%;
-            }
-        }  
     }
 }
+
+@media (max-width: 665px) {
+    #intro {
+        #intro-left {
+            #title {
+                font-size: 30px;
+            }
+        }
+    }
+
+}
+
+// @media (max-width: 375px) {
+
+//     nav {
+//         padding-left: 16px;
+//         padding-right: 16px;
+
+//         #log-in {
+//             display: none;
+//         }
+//     }
+
+//     #intro {
+//         margin-left: 15px;
+//         margin-right: 15px;
+//         margin-top: 45px;
+        
+//         #intro-left {
+//             margin-bottom: 0px !important;
+
+//             #title {
+//                 font-size: 42px !important;
+//             }
+        
+//             #description {
+//                 margin-top: 4px;
+//                 font-size: 18px !important;
+//             }
+    
+//             #form {
+//                 margin-right: 0px;
+    
+//                 #email {
+//                     width: 100%;
+//                     box-sizing: border-box;
+//                 }
+//             }
+    
+//             #compatibility-text {
+//                 font-size: 10px;
+//                 margin-top: 40px;
+//                 width: 100%;
+//                 box-sizing: border-box;
+//             }
+    
+//             #icons {
+//                 margin-top: 14.8px;
+//                 justify-content: space-between;
+    
+//                 img {
+//                     height: 25px;
+//                     margin-right: 0px !important;
+    
+//                     &:nth-child(1) {
+//                         height: 20.8px;
+//                     }
+    
+//                     &:nth-child(5) {
+//                         height: 20.8px;
+//                     }
+//                 }
+//             }
+//         }
+        
+//         #intro-right {
+//             margin-top: 43px;
+//             img {
+//                 display: block;
+//                 margin-left: auto;
+//                 margin-right: auto;
+//                 width: 80%;
+//             }
+//         }  
+//     }
+// }
 
 // @media (max-width: 1130px) and (min-width: 375px) {
 //     #intro {

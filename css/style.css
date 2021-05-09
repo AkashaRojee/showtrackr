@@ -85,7 +85,7 @@ nav #cta a {
 }
 
 #intro {
-  margin: 85px 11.8vw 0px 11.8vw;
+  margin: 85px 12.5vw 0px 12.5vw;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -95,19 +95,20 @@ nav #cta a {
   font-size: 70px;
   font-weight: 900;
   line-height: 1;
-  margin-right: 8.5vw;
 }
 
 #intro #description {
   font-size: 21px;
   font-weight: 300;
   line-height: 1.5;
-  margin-right: 19vw;
+  padding-right: 17.5vw;
   margin-top: 15px;
 }
 
 #intro #form {
-  margin: 30px 243px 0px 0px;
+  margin: 30px 19vw 0px 0px;
+  margin-right: 0px;
+  padding-right: 17.5vw;
 }
 
 #intro #form #email-container {
@@ -152,93 +153,89 @@ nav #cta a {
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: 600;
+  padding-right: 17.5vw;
 }
 
 #intro #icons {
   opacity: 0.3;
   margin-top: 15px;
-}
-
-#intro #icons img:nth-child(-n+4) {
-  margin-right: 37.4px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 17.5vw;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 #intro #intro-right img {
   width: 310px;
 }
 
-#intro-form {
-  /* min-width: 100%; */
+@media (max-width: 1215px) {
+  #intro #title {
+    font-size: 5vw;
+  }
+  #intro #compatibility-text {
+    margin-top: 5vw;
+  }
+  #intro #intro-right img {
+    width: 21.5vw;
+  }
+}
+
+@media (max-width: 1035px) {
+  #intro {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  #intro .flex-row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #intro #intro-left #description {
+    padding: 0px 5vw;
+  }
+  #intro #intro-left #form {
+    padding: 0px 17.5vw;
+    text-align: start;
+  }
+  #intro #intro-left #compatibility-text {
+    margin-top: 40px;
+    padding-right: 0px;
+  }
+  #intro #intro-left #icons {
+    padding: 0px 5vw;
+    margin-bottom: 40px;
+  }
+  #intro #intro-right img {
+    width: 310px;
+  }
+}
+
+@media (max-width: 875px) {
+  #intro #intro-left #form {
+    padding: 0px 10vw;
+  }
 }
 
 @media (max-width: 800px) {
   #nav-mid {
     display: none;
   }
+  #intro {
+    margin: 85px 11.5vw 0px 11.5vw;
+  }
 }
 
-@media (max-width: 375px) {
-  nav {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  nav #log-in {
-    display: none;
-  }
-  #intro {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 45px;
-  }
-  #intro #intro-left {
-    margin-bottom: 0px !important;
-  }
+@media (max-width: 665px) {
   #intro #intro-left #title {
-    font-size: 42px !important;
-  }
-  #intro #intro-left #description {
-    margin-top: 4px;
-    font-size: 18px !important;
-  }
-  #intro #intro-left #form {
-    margin-right: 0px;
-  }
-  #intro #intro-left #form #email {
-    width: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  #intro #intro-left #compatibility-text {
-    font-size: 10px;
-    margin-top: 40px;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  #intro #intro-left #icons {
-    margin-top: 14.8px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #intro #intro-left #icons img {
-    height: 25px;
-    margin-right: 0px !important;
-  }
-  #intro #intro-left #icons img:nth-child(1) {
-    height: 20.8px;
-  }
-  #intro #intro-left #icons img:nth-child(5) {
-    height: 20.8px;
-  }
-  #intro #intro-right {
-    margin-top: 43px;
-  }
-  #intro #intro-right img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
