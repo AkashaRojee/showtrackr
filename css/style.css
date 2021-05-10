@@ -258,6 +258,18 @@ nav #cta a {
   }
 }
 
+@media (max-width: 1265px) {
+  #features-section #features-top {
+    margin: 0px 25vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  #features-section #features-top #features-title {
+    font-size: 4vw;
+  }
+}
+
 @media (max-width: 1035px) {
   #intro {
     -ms-flex-wrap: wrap;
@@ -290,6 +302,29 @@ nav #cta a {
   #intro #intro-right img {
     max-width: 310px;
   }
+  #features-section #features-top {
+    margin: 0px 12.5vw;
+  }
+  #features-section #features-top #features-title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 925px) {
+  #features-section #features-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 53px;
+  }
+  #features-section #features-list .feature-item:nth-child(-n+2) {
+    margin-right: 0px;
+    margin-bottom: 53px;
+  }
 }
 
 @media (max-width: 875px) {
@@ -305,11 +340,20 @@ nav #cta a {
   #intro {
     margin: 85px 11.5vw 0px 11.5vw;
   }
+  #features-section #features-top #features-text {
+    font-size: 16px;
+  }
+  #features-section #features-top #features-description {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 665px) {
   #intro #intro-left #title {
     font-size: 30px;
+  }
+  #features-section #features-top #features-title {
+    font-size: 25px;
   }
 }
 
