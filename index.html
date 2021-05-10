@@ -18,7 +18,7 @@
             </section>
 
             <section class="flex-row justify-center" id="nav-mid">
-                <div id="features"><a href="#">Features</a></div>
+                <div id="features"><a href="#features-section">Features</a></div>
                 <div id="community"><a href="#">Community</a></div>
                 <div id="get-started"><a href="#">Get Started</a></div>
             </section>
@@ -28,39 +28,68 @@
                 <div id="cta"><a href="#">Get started</a></div>
             </section>
         </nav>
+    
 
-        <main>
-            <div id="intro" class="flex-row">
-                <div id="intro-left" class="flex-col justify-center"> 
-                    
-                    <div id="title" class="flex-row">Track your shows automatically</div>
-                    <div id="description" class="flex-row">With ShowTrackr you can track your favorite TV shows automatically, so you never lose track of your TV shows ever again. 🍿</div>
-                   
-                    <div id="form" class="flex-row">
-                        <div id="email-container" class="flex-col">
-                            <label for="email">Email</label>
-                            <input id="email" type="email" placeholder="your@email.com">
-                        </div>
-                        <button>Start tracking</button>
+    <main>
+        <div id="intro" class="flex-row">
+            <div id="intro-left" class="flex-col justify-center"> 
+                
+                <div id="title" class="flex-row">Track your shows automatically</div>
+                <div id="description" class="flex-row">With ShowTrackr you can track your favorite TV shows automatically, so you never lose track of your TV shows ever again. 🍿</div>
+                
+                <div id="form" class="flex-row">
+                    <div id="email-container" class="flex-col">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="your@email.com">
                     </div>
-
-                    <div id="compatibility-text" class="flex-row">COMPATIBLE WITH</div>
-                    <div id="icons" class="flex-row">
-                        <img src="images/netflix.png">
-                        <img src="images/apple.png">
-                        <img src="images/android.png">
-                        <img src="images/windows.png">
-                        <img src="images/synology.png">
-                    </div>
-                </div>
-                <div id="intro-right" class="flex-row">
-                    <img src="images/iphone-x-mockup.png">
+                    <button>Start tracking</button>
                 </div>
 
+                <div id="compatibility-text" class="flex-row">COMPATIBLE WITH</div>
+                <div id="icons" class="flex-row">
+                    <img src="images/netflix.png">
+                    <img src="images/apple.png">
+                    <img src="images/android.png">
+                    <img src="images/windows.png">
+                    <img src="images/synology.png">
+                </div>
             </div>
-        </main>
+            <div id="intro-right" class="flex-row">
+                <img src="images/iphone-x-mockup.png">
+            </div>
+        </div>
 
-    </header>
+        <div id="features-section">
+            <div id="features-top" class="flex-col">
+                <div id="features-text" class="flex-row justify-center">Features</div>
+                <div id="features-title" class="flex-row center-text">Built and customized for your habits</div>
+                <div id="features-description" class="flex-row center-text">ShowTrackr’s built-in machine learning and context-aware features guarantee that all the notifications and recommendations are always delivered to you in the perfect moment.</div>
+            </div>
+            <div id="features-list" class="flex-row center-text">
+                <div id="automated-tracking" class="flex-col feature-item">
+                    <div class="feature-icon"><img src="images/automated-tracking.png"></div>
+                    <div class="feature-title">Automated tracking</div>
+                    <div class="feature-description">Track your favorite shows automatically without switching between apps.</div>
+                    <div class="feature-link">Learn more</div>
+                </div>
+                <div id="machine-learning" class="flex-col feature-item">
+                    <div class="feature-icon"><img src="images/machine-learning.png"></div>
+                    <div class="feature-title">Machine learning</div>
+                    <div class="feature-description">Get recommendations like never before, which are truly customized for your taste.</div>
+                    <div class="feature-link">Learn more</div>
+                </div>
+                <div id="smart-notifications" class="flex-col feature-item">
+                    <div class="feature-icon"><img src="images/smart-notifications.png"></div>
+                    <div class="feature-title">Smart notifications</div>
+                    <div class="feature-description">Receive smart notifications exactly at the right moments when you need them.</div>
+                    <div class="feature-link">Learn more</div>
+                </div>
+            </div>
+            
+        </div>
+
+    </main>
+</header>
 
 </body>
 </html>
