@@ -371,6 +371,7 @@ nav #cta a {
   }
   #intro #intro-left #title {
     font-size: 42px;
+    line-height: 1.14;
   }
   #intro #intro-left #description {
     margin-top: 4px;
@@ -398,6 +399,41 @@ nav #cta a {
   }
   #intro #intro-right {
     margin-top: 3px;
+  }
+  #features-section {
+    margin-top: 90px;
+  }
+  #features-section #features-top {
+    margin: 0px 16px;
+  }
+  #features-section #features-top #features-text {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    font-size: 16px;
+    line-height: 1.38;
+  }
+  #features-section #features-top #features-title {
+    text-align: start;
+    margin-top: 12px;
+    font-size: 35px;
+    line-height: 1.14;
+  }
+  #features-section #features-top #features-description {
+    text-align: start;
+    font-size: 18px;
+    opacity: 0.8;
+    line-height: 1.5;
+  }
+  #features-section #features-list {
+    margin: 51px 16px 0px 16px;
+    text-align: start;
+  }
+  #features-section #features-list .feature-item .feature-icon img {
+    display: inline;
+  }
+  #features-section #features-list .feature-item .feature-title {
+    line-height: 1.39;
   }
 }
 /*# sourceMappingURL=style.css.map */
